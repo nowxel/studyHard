@@ -17,7 +17,7 @@
 // console.log(res3); // true
 // console.log(typeof res3); // "boolean"
 
-// let x = null;
+// let x = NaN;
 // let y = null;
 // let res4 = ( x + y );
 // console.log(res4); // NaN
@@ -91,7 +91,7 @@
         // break;
     // case (curHr < 23) :
         // console.log("Доброго вечoра");
-        // break;    
+        // break;    
     // default:
         // console.log("Доброго нoчi");
 // } 
