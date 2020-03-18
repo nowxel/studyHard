@@ -1,97 +1,73 @@
-// let x = "1";
-// let y = "2";
-// 
-// let res1 = ( x + y );
-// console.log(res1); // "12"
-// console.log(typeof res1); // "string"
-
-// let x = true;
-// let y = "2";
-// let res2 = ( x + y );
-// console.log(res2); // "true2"
-// console.log(typeof res2); // "string"
-
-// let x = true;
-// let y = null;
-// let res3 = !!( x + y );
-// console.log(res3); // true
-// console.log(typeof res3); // "boolean"
-
-// let x = NaN;
-// let y = null;
-// let res4 = ( x + y );
-// console.log(res4); // NaN
-// console.log(typeof res4); // "number"
-
-// let number = prompt("your number?");
-// let res = number % 2 === 0 && number > 0;
+// let arr = [2, 3, 4, 5];
+// let res = 1;
+// for ( let i = 0; i < arr.length; i++ ){
+    // res *= arr[i];
+// }
 // console.log(res);
-// let res1 = number % 7 === 0;
-// console.log(res1);
-
-// let arr = [];
-// arr[0] = 56;
-// arr[1] = "string";
-// arr[2] = true;
-// arr[3] = null;
-// console.log(arr.length);
-// arr.push(prompt("your value?"));
-// document.write(arr[4]);
-// arr.shift();
-// console.log(arr);
-
-// let cities = ["Rome", "Lviv", "Warsaw"];
-// console.log(cities.join('*')); // "Rome*Lviv*Warsaw"
-
-// let isAdult = (prompt("How old are you?"));
-// if ( isAdult >= 18 ){
-//    console.log("Ви досягли повнолітнього віку");
-// }
-// else{
-// console.log("Ви ще надто молоді");
-// }
-
-// let a = prompt("the smallest side of triangle?");
-// let b = prompt("middle side?");
-// let c = prompt("the biggest side?");
-// let side1 = parseFloat(a);
-// let side2 = parseFloat(b);
-// let side3 = parseFloat(c);
-// let s = (side1 + side2 + side3)/2;
-// let area =  Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
-// console.log(area);
-// if ( side1**2 + side2**2 === side3**2 ){
-    // console.log("90 degrees")
-// } 
-// else{
-    // console.log("not 90 degrees");
-// }
-
-// let today = new Date()
-// let curHr = today.getHours()
+// let i = 0;
+// while (i < arr.length){
+    // res *= arr[i];
+    // i++;
 // 
-// if (curHr < 11) {
-//   console.log("Доброго ранку");
-// } else if (curHr < 17) {
-//   console.log("Доброго дня");
-// } else if (curHr < 23) {
-//   console.log("Доброго вечора");
-// } else {
-    // console.log("Доброї ночі");
 // }
+// console.log(res);
+
+// for ( i = 0; i <= 15; i++ ) {
+    // if (i % 2 === 0) {
+        // console.log(`${i} is even`);
+    // }
+    // else{
+        // console.log(`${i} is odd`);    
+    // }; 
+// }
+
+// function randArray(k) {
+    // let arr = [];
+    // for (let i=0, k=500; i<=k; i++) {
+        // arr.push(Math.round(Math.random() * k))
+    // }
+    // console.log(arr);
 // 
-// let today = new Date()
-// let curHr = today.getHours();
-// switch(true) {
-    // case (curHr < 11 ):
-        // console.log("Доброго ранку");
-        // break;
-    // case (curHr < 17):
-        // console.log("Доброго дня");
-        // break;
-    // case (curHr < 23) :
-        // console.log("Доброго вечoра");
-        // break;    
-    // default:
-        // console.log("Доброго нoчi");
-// } 
+// }
+// randArray(5);
+
+// function raiseToDegree(a, b){
+    // let res = a ** b;
+    // console.log(res);
+// }
+// raiseToDegree(3 , 4);
+
+// function findMin(){
+    // let arguments = [];
+    // return Math.min.();    
+// }
+// findMin(12, 14, 4, -4, 0.2); // => -4
+
+// function findUnique(arr) {
+    // let unique = [...new Set(arr)];
+    // return arr.length == unique.length;
+//   }
+//   
+//   console.log(findUnique([1, 2, 3, 5, 3]));
+//   console.log(findUnique([1, 2, 3, 5, 11]));
+
+// let lastElem =  function(array, x) {
+    // if (array == null) 
+    //   return void 0;
+    // if (x == null) 
+    //    return array[array.length - 1];
+    // return array.slice(Math.max(array.length - x, 0));  
+    // };
+// 
+    // console.log(lastElem([3, 4, 10, -5]));      // -5
+    // console.log(lastElem([3, 4, 10, -5],2));   // [10, -5]
+    // console.log(lastElem([3, 4, 10, -5],8));  //[3, 4, 10, -5]
+   
+    // function titleCase(str) {
+        // var splitStr = str.toLowerCase().split(' ');
+        // for (var i = 0; i < splitStr.length; i++) {  // You do not need to check if i is larger than splitStr length, as your for does that for you
+            // splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);// Assign it back to the array
+        // }
+        // return splitStr.join(' '); // Directly return the joined string
+    // }
+    // console.log(titleCase("i love java script"));
