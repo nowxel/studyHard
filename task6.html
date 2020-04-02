@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB</title>
+</head>
+
+<body>
+    <!--  Practical task
+ 1. На HTML-сторінці є елемент div:
+     <body>	
+ 	<div id="test">First</div>
+   </body>	
+ Потрібно змінити вміст елемента із First на Last. 
+ Доступіться до елемента div хоча б 2 способами.	     -->
+
+
+    <!-- // 2. На сторінці є елемент зображення: -->
+
+    <!-- <img class="image" src="dog.jpg">  -->
+
+    <!-- Потрібно змінити зображення dog.jpg на cat.jpg.
+// Виведіть в модальному вікні вміст тегу img з новим зображенням.-->
+
+    <!-- 3. На вказаній HTML-сторінці необхідно отримати всі елементи всередині
+    
+// тега div по селектору (використати метод document.querySelectorAll).
+// І вивести їх вміст із вказанням номеру абзацу в такому форматі:
+// Selector text 0: First paragraph
+// Selector text 1: Second paragraph
+// Selector text 2: Third paragraph-->
+
+
+    <!-- <h2>Article header</h2>
+    <div id="text">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+    </div>
+    <p>Another text</p> -->
+
+
+    <!--// 4. На HTML-сторінці є ненумерований список з id="list",
+// який складається із 5 елементів. У модальному вікні необхідно послідовно вивести вміст:
+// 1) першого елемента списку
+// 2) останнього елемента списку
+// 3) другого елемента списку
+// 4) четвертого елемента списку
+// 5) третього елемента списку
+// Зробіть завдання 2 різними способами.
+// Приклад:
+// • 1
+// • 2
+// • 3
+// • 4
+// • 5
+// Результат виводу: 1, 5, 2, 4, 3
+
+// 5. Для сторінки
+//
+
+<body>
+    // <h1>I'am a big header!!!</h1>
+    // <div id="myDiv">
+        // <p>First paragraph</p>
+        // <p>Second paragraph</p>
+        // <p>Third paragraph</p>
+        // <p>Fourth paragraph</p>
+        // </div>
+    // <ul id="myList">
+        // <li>Make</li>
+        // <li>me</li>
+        // <li>vertical!</li>
+        // </ul>
+    // <span>Make me invisible, please!</span>
+    // </body>
+// Напишіть скріпт, який за допомогою засобів DOM
+// простилізує сторінку так як показано нижче:
+
+
+
+// 6. Задано HTML-сторінку:
+//
+
+<body>
+    // <input type="text" id="input1" value="Text1">
+    // <input type="text" id="input2" value="Text2">
+    // </body>
+// 1) Користувач почергово вводить 2 повідомлення
+// (використати prompt()).
+// 1-е повідомлення записується в 1-ий <input>, 2-ге – в 2-ий.
+// 2) Поміняти значення 1-го і 2-го інпутів місцями. -->
+
+
+    <!-- 7. Напишіть скріпт, який за допомогою засобів DOM створить
+ для порожньої HTML-сторінки таку структуру з тегів
+ і їх атрибутів. -->
+
+    <!-- <body> == $0
+    <script>-->
+    <script>
+
+// *************************Task 1********************
+
+        // document.getElementById("test").innerHTML = "Last";
+        // document.querySelector("#test").innerHTML = "Last2";
+
+// *************************Task 2********************
+
+        // let elem = document.getElementsByClassName("image")[0];
+        // elem.scr = "cat.jpg";
+        // alert(elem.outerHTML);
+
+// *************************Task 3********************
+
+        // let elems = document.querySelectorAll("#text p");
+
+        // for (let i = 0; i < elems.length; i++) {
+        //     alert("Selector text " + i + ": " + elems[i].innerHTML);
+        // }
+
+// *************************Task 4********************
+
+        // let firstEl = parentEl.childNodes[0].innerHTML;
+        // let lastEl = parentEl.childNodes[4].innerHTML;
+        // let secondEl = parentEl.childNodes[1].innerHTML;
+        // let fourthEl = parentEl.childNodes[3].innerHTML;
+        // let thirdEl = parentEl.childNodes[2].innerHTML;
+
+        // let firstEl = document.getElementById("list").firstChild.innerHTML;
+        // let lastEl = document.getElementById("list").lastChild.innerHTML;
+        // let secondEl = document.getElementById("list").firstChild.nextSibling.innerHTML;
+        // let fourthEl = document.getElementById("list").lastChild.previousSibling.innerHTML;
+        // let thirdEl = document.getElementById("list").firstChild.nextSibling.nextSibling.innerHTML;
+
+        // alert(firstEl);
+        // alert(lastEl);
+        // alert(secondEl);
+        // alert(fourthEl);
+        // alert(thirdEl);
+
+// *************************Task 5********************
+
+        // document.body.children[0].style.backgoundColor = "lightgreen";
+        // document.getElementById("myDiv").children[0].style.frontWeight = "700"
+        // document.getElementById("myDiv").children[1].style.color = "red";
+        // document.getElementById("myDiv").children[2].style.textDecoration = "underline";
+        // document.getElementById("myDiv").children[3].style.frontStyle = "italic";
+        // document.getElementById("myList").style.listStyle = "none";
+        // document.getElementById("myList").style.display = "flex";
+
+// *************************Task 6********************
+        // let innerHTML
+        // let inp1 = document.getElementById("input1");
+        // let inp2 = document.getElementById("input2");
+        // inp1.value = data1;
+        // inp2.value = data2;
+
+        // let input1Value = inp1.value;
+        // let input2Value = inp2.value;
+        // inp1.value = input2Value;
+        // inp2.value = input1Value;
+
+// *************************Task 7********************
+
+        // const x = 100;
+        // document.body.innerHTML =
+        //     `<main class="mainClass check item">
+        //     <div id="myDiv">${x}
+        //         <p>First paragraph</p>
+        //     </div>
+        // </main>`;
+
+    </script>
+</body>
+
+</html>
