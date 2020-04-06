@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Untitled Document</title>
+</head>
+
+<body>
+
+	<!--	Task 1 -->
+	<!-- На HTML-сторінці є посилання <a>. 
+				У випадку коли, href починається на https://, 
+				потрібно додати посиланню атрибут target="_blank". -->
+	<!--<a href="https://google.com.ua">Google</a>
+		<script>
+			<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+			$("[href^='https://']").attr("target", "_blank");-->
+
+
+
+	<!--	2. Для заданої сторінки знайдіть всі <h2> з класом 
+		head, зробіть для них зелений колір фону, потім серед 
+		знайдених елементів знайдіть елементи з класом inner 
+		і поставте їм розмір шрифту 35px.-->
+
+	<!-- <h2 class="head" style="background: green;">header1</h2>
+	<h2 class="head" style="background: green;">header2 <span class="inner" style="font-size:  35px;">inner elem1
+	</span>
+	</h2>
+	<h2>header3</h2>
+	<h2 class="head" style="background: green;">header4<span>inner elem2
+		</span>
+	</h2>
+	<h2>header5</h2> -->
+
+
+	<!--	3. Знайдіть теги <div>, які стоять безпосередньо 
+		після <h3> і перемістіть кожен <div>-елемент так, 
+			щоб він став безпосередньо над <h3>. -->
+
+	<!-- <h3>header1</h3>
+		<div>text1</div>
+	<div>text2</div>
+	<h3>header2</h3> -->
+
+
+	<!--	4. На HTML-сторінці є 6 чекбоксів. 
+		Напишіть скрипт, який після того, 
+		як користувач позначив будь-які 3 чекбокси, 
+		всі чекбокси робить неактивними.-->
+
+
+	<div id="checkbox_group">
+		<label for="Sports">Sports</label><input type="checkbox" class="cbox" name="Sports" id="Sports"
+			value="Sports"><br />
+		<label for="News">News</label><input type="checkbox" class="cbox" name="News" id="News" value="News"><br />
+		<label for="Entertainment">Entertainment</label><input type="checkbox" class="cbox" name="Entertainment"
+			id="Entertainment" value="Entertainment"><br />
+		<label for="Music">Music</label><input type="checkbox" class="cbox" name="Music" id="Music" value="Music"><br />
+		<label for="Movies">Movies</label><input type="checkbox" class="cbox" name="Movies" id="Movies" value="Movies"><br />
+		<label for="Books">Books</label><input type="checkbox" class="cbox" name="Books" id="Books" value="Books"><br />
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$(".cbox").on("click", function () {
+				var numberOfChecked = $('input.cbox:checkbox:checked').length;
+				if (numberOfChecked > 3) {
+					$(this).prop('checked', false);
+				}
+			});
+
+		});
+	</script>
+
+</body>
+
+</html>
